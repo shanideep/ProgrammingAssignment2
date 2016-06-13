@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This set of functions inputs a matrix and calculates it's inverse
+## The inverse is done only once and during every other recall of inverse, cache stored inverse is returned
 
-## Write a short comment describing this function
+## This function takes a matrix as input and converts it to list which has 4 matrix elements
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -18,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function calculates inverse of matrix if inverse has not been done before.
+## If inverse has been already calculated then the return value is done though cache stored value.
 
 cacheSolve <- function(x, ...) {
         m <- x$getinversematrix()
